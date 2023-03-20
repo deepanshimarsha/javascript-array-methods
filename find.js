@@ -70,24 +70,7 @@ console.log(result);
 // Output: { name: "Sarah", grade: "B", scholarship: true }
 
 
-//Write an ES6 function that takes an array of objects containing Bollywood movie information (title, director, year, rating) and returns an array with only the movie titles that were made before 1990 and has a rating above 8.0.
 
-const bollywoodMovies1 = [
-  { title: 'Sholay', director: 'Ramesh Sippy', year: 1975, rating: 8.2 },
-  { title: 'Amar Akbar Anthony', director: 'Manmohan Desai', year: 1977, rating: 7.6 },
-  { title: 'Namak Halaal', director: 'Prakash Mehra', year: 1982, rating: 7.4 },
-  { title: 'Mr. India', director: 'Shekhar Kapur', year: 1987, rating: 7.8 },
-  { title: 'Qayamat Se Qayamat Tak', director: 'Mansoor Khan', year: 1988, rating: 7.6 },
-  { title: 'Parinda', director: 'Vidhu Vinod Chopra', year: 1989, rating: 8.1 },
-  { title: 'Dil', director: 'Indra Kumar', year: 1990, rating: 7.8 }
-];
-
-const getBestOldBollywoodMovies1 = arrOfObj => arrOfObj.filter(({year, rating}) => year <1990 && rating > 8).map(({title}) => title)
-
-
-
-const bestOldMovies1 = getBestOldBollywoodMovies1(bollywoodMovies1);
-console.log(bestOldMovies1); // Output: ['Sholay', 'Parinda']
 
  //Write an ES6 function that takes an array of objects representing books with properties title, author and pageCount. Return the first book object that has more than 500 pages.
  const books = [

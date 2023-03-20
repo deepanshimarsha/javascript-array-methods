@@ -102,4 +102,35 @@ const getBookTitles = arrOfBooks => arrOfBooks.map(({title}) => title)
 const titles = getBookTitles(books);
 console.log(titles); // Output: ['The Great Gatsby', 'To Kill a Mockingbird', '1984', 'Pride and Prejudice']
 
+//Write a function that takes an array and returns a new array having even numbers multiplied by 20 and odd numbers multiplied by 30.
+
+const func1 = arr => arr.map((ele) => ele%2 === 0 ? ele*20 : ele*30 )
+console.log(func1([1,2,3,4,5,6]))
+
+//Write a function that takes an array and returns a new array having even indexes numbers subtracted by 2 and odd indexes numbers added by 3.
+
+const func2 = arr => arr.map((ele, idx) => idx%2 === 0 ? ele - 2  : ele + 3 )
+console.log(func2([1,2,3,4,5,6]))
+
+// write a function which removes all letters between first and last letter of a word and replace with number of letters
+
+
+const input = "Every a developer likes to mix kubernetes and javascript"; 
+const removeLetters = str => str.split(" ").map((ele) => ele[0] + ele.length + ele[ele.length-1]).join(" ")
+console.log(removeLetters(input))
+
+//expected output - "E3y d7r l3s to m1x k8s a1d j8t"
+
+//Problem Statement: We are interested in retrieving only the name of the students and all the names should be in caps.
+//Output: ['JOHN', 'BABA', 'YAGA', 'WICK']
+
+
+studentRecords = [ {name: 'John', id: 123, marks : 98 },
+  {name: 'Baba', id: 101, marks : 23 },
+  {name: 'yaga', id: 200, marks : 45 },
+  {name: 'Wick', id: 115, marks : 75 } ] 
+
+const studentNameUppercase = arr => arr.map((obj) => obj.name.toUpperCase())
+console.log(studentNameUppercase(studentRecords))
+
 
